@@ -38,3 +38,31 @@ CREATE TABLE subjects (
     visible TINYINT(1),
     PRIMARY KEY (id)
 );
+
+
+--crud operations
+
+
+--read
+SELECT * FROM table_name WHERE column1='some_text' ORDER BY column1 ASC;
+
+--create
+INSERT INTO table (col1,col2,col3) VALUES (val1,val2,val3);
+
+--update
+SET col1= 'this' , col2='that' WHERE id=1;
+
+--delete
+DELETE FROM  table_name WHERE id=1;
+
+
+
+--example
+
+INSERT INTO subjects (id,menu_name,position,visible) VALUES (1,'about globe bank',1 ,1);
+
+SELECT * FROM subjects WHERE position=3 AND visible=1;
+
+UPDATE subjects SET position='3' , visible='0' , WHERE id=3;
+
+DELETE FROM subjects WHERE id=4 LIMIT 1;
