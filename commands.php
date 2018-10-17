@@ -66,3 +66,23 @@ SELECT * FROM subjects WHERE position=3 AND visible=1;
 UPDATE subjects SET position='3' , visible='0' , WHERE id=3;
 
 DELETE FROM subjects WHERE id=4 LIMIT 1;
+
+--index
+
+ADD INDEX index_name (column);
+
+
+
+--conecting to php
+
+<?php
+$dbhost=""
+$dbuser=""
+$dbpassword=""
+$dbname=""
+
+mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname)
+
+mysqli_close($connection)
+
+?>
