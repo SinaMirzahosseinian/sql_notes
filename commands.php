@@ -85,4 +85,33 @@ mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname)
 
 mysqli_close($connection)
 
+mysqli_query($connection,$query)
+
+mysqli_free_result($result_set)
+
+mysqli_fetch_row()
+
+mysqli_fetch_assoc()
+
+mysqli_fetch_array()
+
 ?>
+
+
+---
+
+06. Ask for data with 'SELECT ... FROM ...'
+07. Narrow down a query with 'WHERE'
+08. Add more criteria to a statement with 'AND'  'OR' 
+09. Limit responses with 'LIKE' 'LIMIT'
+10. Organize responses with 'ORDER BY'
+11. Find information about the data 'SELECT DISTINCT()' 'SELECT COUNT()'
+12. Ask for data across two or more tables with 'JOIN... ON'
+https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+13. Understand JOIN types 'LEFT JOIN' 'RIGHT JOIN' 'FULL OUTER JOIN'
+14. Combine results with 'GROUP BY'
+18. Transform data LOWER() UPPER() SUBSTR() REPLACE()  CAST(... AS CHAR)
+19. Use aliases to shorten field names with 'AS'
+20. Add data to a table with 'INSERT INTO ... VALUE'
+21. Modify data in a table with 'UPDATE ... SET'
+22. Remove data from a table with 'DELETE FROM'
